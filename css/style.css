@@ -23,3 +23,50 @@ body {
   color: var(--text-main);
   line-height: 1.5;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5%;
+}
+
+nav ul {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-muted);
+}
+
+.logo a {
+  font-size: 2rem;
+  font-weight: var(--weight-heavy);
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border-color);
+  padding: 2rem 5%;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer p {
+  color: var(--text-muted);
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
