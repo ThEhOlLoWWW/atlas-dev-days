@@ -97,3 +97,35 @@ a {
   padding: 1rem 2.5rem;
   border-radius: 50px;
 }
+
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5%;
+}
+
+.about {
+  max-width: 45%;
+}
+.about p {
+  color: var(--text-muted);
+}
+
+.stat {
+  display: flex;
+  gap: 3rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item h2 {
+  font-size: 4rem;
+}
+
+.stat-item p {
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
