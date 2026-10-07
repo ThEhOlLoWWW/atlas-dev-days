@@ -25,7 +25,37 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="registration">
+        <h1>Inscrivez-vous</h1>
+        <p>Réservez votre place pour les Atlas Dev Days.</p>
+
+        <form action="#" method="POST" class="registration-form">
+          <div class="form-group">
+            <label for="nom">Nom Complet:</label>
+            <input type="text" id="nom" name="nom" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Adresse Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="role">Votre Profil:</label>
+            <select name="role" id="role" required>
+              <option value="">Sélectionnez un profil</option>
+              <option value="Développeur">Développeur</option>
+              <option value="Étudiant">Étudiant</option>
+              <option value="Designer">Designer</option>
+              <option value="Autre">Autre</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn submit-btn">Sign Up</button>
+        </form>
+      </section>
+    </main>
     <footer class="site-footer">
       <div class="footer-container">
         <p>&copy; 2026 Atlas Dev. Tous droits réservés.</p>
