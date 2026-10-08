@@ -1,10 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
 
 :root {
   --bg-color: #ffffff;
@@ -29,6 +28,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 5%;
+  border-bottom: 1px solid var(--border-color);
 }
 
 nav ul {
