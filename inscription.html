@@ -27,33 +27,90 @@
     </header>
     <main>
       <section class="registration">
-        <h1>Inscrivez-vous</h1>
-        <p>Réservez votre place pour les Atlas Dev Days.</p>
+        <div class="page-head-inscription">
+          <h1>Inscrivez-vous</h1>
+          <p>Réservez votre place pour les Atlas Dev Days.</p>
+        </div>
 
-        <form action="#" method="POST" class="registration-form">
-          <div class="form-group">
-            <label for="nom">Nom Complet:</label>
-            <input type="text" id="nom" name="nom" required />
-          </div>
+        <div class="page-body">
+          <form action="#" method="POST" class="registration-form">
+            <div class="form-group">
+              <label for="nom">Nom Complet:</label>
+              <input type="text" id="nom" name="nom" required />
+            </div>
 
-          <div class="form-group">
-            <label for="email">Adresse Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
+            <div class="form-group">
+              <label for="email">Adresse Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
 
-          <div class="form-group">
-            <label for="role">Votre Profil:</label>
-            <select name="role" id="role" required>
-              <option value="">Sélectionnez un profil</option>
-              <option value="Développeur">Développeur</option>
-              <option value="Étudiant">Étudiant</option>
-              <option value="Designer">Designer</option>
-              <option value="Autre">Autre</option>
-            </select>
-          </div>
+            <div class="form-group">
+              <label for="tel">Téléphone:</label>
+              <input
+                type="tel"
+                id="tel"
+                name="tel"
+                required
+                pattern="^(\+212|0)[5-7][0-9]{8}$"
+              />
+            </div>
 
-          <button type="submit" class="btn submit-btn">Sign Up</button>
-        </form>
+            <div class="form-group">
+              <label for="role">Votre Profil:</label>
+              <select name="role" id="role" required>
+                <option value="">Sélectionnez un profil</option>
+                <option value="Développeur">Développeur</option>
+                <option value="Étudiant">Étudiant</option>
+                <option value="Designer">Designer</option>
+                <option value="Autre">Autre</option>
+              </select>
+            </div>
+
+            <fieldset>
+              <legend>Ateliers souhaités</legend>
+              <label class="choice">
+                <input type="checkbox" name="atelier" value="design" />
+                Design inclusif
+              </label>
+              <label class="choice">
+                <input type="checkbox" name="atelier" value="ia" />
+                L'IA dans votre workflow
+              </label>
+              <label class="choice">
+                <input type="checkbox" name="atelier" value="securite" />
+                Sécurité web
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Journée(s) de participation</legend>
+              <label class="choice">
+                <input type="radio" name="jour" />
+                Jour 1
+              </label>
+              <label class="choice">
+                <input type="radio" name="jour" />
+                Jour 2
+              </label>
+              <label class="choice">
+                <input type="radio" name="jour" />
+                Les Deux
+              </label>
+            </fieldset>
+
+            <div class="form-group">
+              <label>Message (optionnel) </label>
+              <textarea rows="4"></textarea>
+            </div>
+
+            <label class="choice">
+              <input type="checkbox" required />
+              J'accepte que mes données soient utilisées pour l'événement
+            </label>
+
+            <button type="submit" class="btn submit-btn">Sign Up</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="site-footer">
