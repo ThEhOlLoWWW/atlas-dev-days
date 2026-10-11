@@ -93,10 +93,17 @@ a {
 }
 
 .hero-btn {
-  background-color: var(--text-main);
-  color: #ffffff;
+  background-color: var(--bg-color);
+  color: var(--text-main);
   padding: 1rem 2.5rem;
   border-radius: 50px;
+  border: 1px solid var(--text-main);
+  transition: background-color 0.6s ease;
+}
+
+.hero-btn:hover {
+  background-color: var(--text-main);
+  color: var(--bg-color);
 }
 
 .info-wrapper {
