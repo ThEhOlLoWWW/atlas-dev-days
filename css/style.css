@@ -295,3 +295,7 @@ legend {
   background-color: var(--bg-color);
   color: var(--text-main);
 }
+
+select {
+  background-color: var(--bg-color);
+}
